@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="aseets/css/base.css">
+    <link rel="stylesheet" href="aseets/css/main.css">
+    <link rel="stylesheet" href="aseets/css/rain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@100;300;400;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aseets/font/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <!-- Đặt âm thanh của bạn vào đây -->
+    
+    <div class="app">
+        <header class="header">
+           
+            <div class="grid">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <button class="header__navbar-button"><a href="">HOME</a></button>
+                        <li class="header__navbar-item">
+                            Kết nối
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-brands fa-square-facebook "></i>
+                            </a>
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-brands fa-square-instagram "></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                Thông báo
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">
+                                <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">đăng ký</li>
+                        <li class="header__navbar-item header__navbar-item--strong">đăng nhập</li>  
+                        
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link">
+                                <i id="prevIcon" class="header__navbar-icon fa-solid fas fa-backward " onclick="playPrevious()" ></i> 
+                                <i id="volumeIcon" class="header__navbar-icon fa-solid fa-volume-mute fa-beat" onclick="toggleAudio()" ></i> 
+                                <i id="nextIcon" class="header__navbar-icon fa-solid fas fa-forward " onclick="playNext()" ></i>               
+                              </a>
+                        </li>  
+                        
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="image-container">
+                <img src="aseets/img/42613.jpg" data-speedx="0.3" data-speedy="0.38" class="bg-img">
+            </div>
+            <div class="center">
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                  <div class="drop"></div>
+                  <div class="ripples">
+                    <span class="ripple"></span>
+                    <span class="ripple"></span>
+                  </div>
+                  <div class="splash"></div>
+                  <div class="bubbles">
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                    <span class="bubble"></span>
+                  </div>
+                </div>
+                <div class="rain">
+                    <div class="drop"></div>
+                    <div class="ripples">
+                      <span class="ripple"></span>
+                      <span class="ripple"></span>
+                    </div>
+                    <div class="splash"></div>
+                    <div class="bubbles">
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                      <span class="bubble"></span>
+                    </div>
+                  </div>
+            </div>
+            
+            <div class="ghibli__item" data-speedx="0.3" data-speedy="0.38">
+                <img src="aseets/img/1287574.jpg"  class="ghibli__item bg-img1">
+                <div class="move">
+                    <ul class="title">
+                        <li>
+                            <span>Totoro . . . .</span>
+                        </li>
+                    </ul>
+                    <ul class="text">
+                        <li>
+                            <span>Hàng xóm của tôi là Totoro (となりのトトロ / Tonari no Totoro trong tiếng Nhật, My Neighbor Totoro trong tiếng Anh) là một phim hoạt hình Nhật Bản được hãng Ghibli sản xuất vào năm 1988, vua hoạt hình của Nhật Bản Miyazaki Hayao viết kịch bản và đạo diễn. "Hàng xóm của tôi là Totoro" có thể coi là một trong những phim hoạt hình lớn đầu tiên của Hayao Miyazaki, tác phẩm này vui tươi, trong sáng, phù hợp với mọi lứa tuổi và thành phần. Nó mở màn cho loạt hoạt hình vẽ bằng tay sau này.</span>
+                        </li>
+                    </ul>
+                    <ul class="title1">
+                        <button class="moveButton">
+                            <a href="https://motphimtv.vip/xem-phim/hang-xom-cua-toi-la-totoro-tap-full-1019_18595.html" target="_blank">Move</a>
+                        </button>
+                    </ul>
+                </div>  
+            </div>
+            
+        </main>
+        <div class="container">
+            <div class="ghibli__items" data-speedx="0.3" data-speedy="0.38">
+                <img src="aseets/img/cropped-1920-1080-314169.jpg"  class="ghibli__items bg-img2">
+                <div class="moves">
+                    <ul class="titles">
+                        <li>
+                            <span>. . . . Laputa</span>
+                        </li>
+                    </ul>
+                    <ul class="texts">
+                        <li>
+                            <span>Tenkuu no Shiro Laputa (Nhật: 天空の城ラピュタ, てんくうのしろラピュタ Việt: Lâu đài trên không Laputa) là một bộ phim năm 1986, biên kịch và đạo diễn bởi Hayao Miyazaki. Đây là bộ phim đầu tiên mà Studio Ghibli sản xuất và phát hành, dù có một vài ý kiến cho rằng đây là bộ phim thứ hai kể từ khi Kaze no Tani no Nausicaä được hai sáng lập viên tạo ra hai năm trước. Tenkuu no Shiro Laputa đã đoạt giải Animage Anime Grand Prix năm 1986. Cái tên Laputa được đặt theo tên của hòn đảo bay Laputa trong tiểu thuyết Những chuyến du hành của Gulliver của tác giả Jonathan Swift.</span>
+                        </li>
+                    </ul>
+                    <ul class="title1s">
+                        <button class="moveButtons">
+                            <a href="https://motphimtv.vip/xem-phim/hang-xom-cua-toi-la-totoro-tap-full-1019_18595.html" target="_blank">Move</a>
+                        </button>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+        <footer class="footer">
+
+        </footer>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/volume.js"></script>
+</body>
+
+</html>

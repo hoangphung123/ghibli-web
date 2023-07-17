@@ -1,0 +1,331 @@
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.header {
+    position: absolute;
+    z-index: 9999;
+    height: 120px;
+    width: 100%;
+    
+}
+
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navbar-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.header__navbar-item{
+    margin: 8px;
+    position: relative;
+}
+
+.header__navbar-item, .header__navbar-item-link {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: rgba(250, 249, 249, 0.527);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.header__navbar-item:hover, 
+.header__navbar-item-link:hover {
+    cursor: pointer;
+    
+    color: rgba(250, 247, 247, 0.795);
+}
+
+
+
+.header__navbar-item--strong{
+    color: rgba(245, 238, 238, 0.849);
+    font-weight: 400;
+}
+
+.header__navbar-item--separate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid rgb(252, 249, 249);
+    height: 14px;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header__navbar-icon-link{
+    color: rgb(250, 249, 249, 0.527);
+    text-decoration: none;
+}
+
+.header__navbar-button{
+    border: none;
+    height: 21px;
+    width: 81px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    background-color: rgba(95, 215, 159, 0.623);
+}
+
+.header__navbar-button:hover{
+    background-color: rgb(95, 215, 159);
+    box-shadow: 0px 0px 30px 5px rgb(107, 245, 181);
+    cursor: pointer;
+}
+
+
+.header__navbar-button a {
+    text-decoration: none;
+    color: rgba(245, 238, 238, 0.849);
+}
+
+.header__navbar-button a:hover{
+    color: rgb(255, 255, 255);
+}
+
+.ghibli__item{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: calc(50% - 250px);
+    right: calc(50% - 550px);
+    
+}
+
+
+
+
+.image-container {
+    position: absolute;
+    display: inline-block;
+  }
+  
+.image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 13, 13, 0.459); /* Màu xám với độ mờ 0.5 */
+    
+  }
+
+
+
+.ghibli__item .bg-img1 {
+    display: block;
+}
+
+
+
+.bg-img1:hover{
+    content: "";
+    box-shadow: 0px 0px 100px 0.1px rgba(95, 215, 159, 0.363), 0 0 100px 0.1px rgba(95, 215, 159, 0.363);
+    backdrop-filter: blur(10px);
+    
+}
+
+
+.bg-img1{
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 500px;
+    border-radius: 10%;
+    cursor: pointer;
+    
+}
+
+.ghibli__item .title{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    
+}
+
+.ghibli__item .title li span{
+    font-family: 'Lilita One', cursive;
+    font-size: 45px;
+    color: rgba(78, 189, 137, 0.959);
+    letter-spacing: 5px;
+}
+
+
+.ghibli__item .title1{
+    padding: 0;
+    position: absolute;
+    top: 82%;
+    left: 0;
+}
+
+.ghibli__item .title1 button{
+    background-color: rgba(95, 215, 159, 0.623);
+    box-shadow: 0px 0px 0px 1px rgb(107, 245, 181);
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+
+.bg-img1 {
+    transition: box-shadow 0.3s ease; 
+  }
+  
+.ghibli__item .moveButton:hover {
+    background-color: rgba(95, 215, 159); 
+}
+
+.ghibli__item .title1 a{
+    text-decoration: none;
+    color: rgba(245, 238, 238, 0.849);
+}
+
+.ghibli__item .text{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: calc(20% + 18px);
+    width: 400px;
+    transform: translate(-50%, -50%); 
+    background-color: rgba(44, 112, 80, 0.856);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ghibli__item li{
+    color: rgba(245, 238, 238, 0.849);
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+
+
+.ghibli__items{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: calc(50% + 340px);
+    right: calc(50% - 356px );
+    
+}
+
+.ghibli__items .bg-img2 {
+    display: block;
+}
+
+
+
+.bg-img2:hover{
+    content: "";
+    box-shadow: 0px 0px 100px 0.1px rgba(123, 74, 77, 0.363), 0 0 100px 0.1px rgba(123, 74, 77, 0.363);
+    backdrop-filter: blur(10px);
+    
+}
+
+
+.bg-img2{
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 500px;
+    border-radius: 10%;
+    cursor: pointer;
+    
+}
+
+.ghibli__items .titles{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 8%;
+    right: 0;
+    
+}
+
+.ghibli__items .titles li span{
+    font-family: 'Lilita One', cursive;
+    font-size: 45px;
+    color: rgb(167, 81, 92);
+    letter-spacing: 5px;
+}
+
+.ghibli__items .title1s{
+    padding: 0;
+    position: absolute;
+    top: 82%;
+    right: 0;
+}
+
+.ghibli__items .title1s button{
+    background-color: rgba(134, 74, 59, 0.767);
+    box-shadow: 0px 0px 0px 1px rgb(216, 120, 97);
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+
+.bg-img2 {
+    transition: box-shadow 0.3s ease; 
+  }
+  
+.ghibli__items .moveButtons:hover {
+    background-color: rgba(123, 74, 77); 
+}
+
+.ghibli__items .title1s a{
+    text-decoration: none;
+    color: rgba(245, 238, 238, 0.849);
+}
+
+
+.ghibli__items .texts{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 21%;
+    right: 0;
+    width: 400px;
+    
+    background-color: rgba(123, 74, 77, 0.856);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ghibli__items li{
+    color: rgba(245, 238, 238, 0.849);
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+
+
+
+
