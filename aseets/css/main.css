@@ -49,10 +49,18 @@ main{
 
 
 
-.header__navbar-item--strong{
+.header__navbar-item--strong {
     color: rgba(245, 238, 238, 0.849);
     font-weight: 400;
+    text-decoration: none;
 }
+
+.iuiu{
+    color: rgba(245, 238, 238, 0.849);
+    font-weight: 400;
+    text-decoration: none;
+}
+
 
 .header__navbar-item--separate::after{
     content: "";
