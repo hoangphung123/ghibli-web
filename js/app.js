@@ -146,6 +146,27 @@ button1.addEventListener("mouseleave", () => {
   bgImg1.style.boxShadow = ""; // Loại bỏ hiệu ứng box-shadow của bg-img1
 });
 
+const ghibliItems = document.querySelector(".ghibli__items");
+// Điều chỉnh độ nhạy của hiệu ứng, giá trị càng lớn thì hiệu ứng càng nhạy
+
+ghibliItems.addEventListener("mousemove", (event) => {
+  const boundingRect = ghibliItems.getBoundingClientRect();
+  const offsetX = event.clientX - boundingRect.left;
+  const offsetY = event.clientY - boundingRect.top;
+
+  const centerX = boundingRect.width / 2;
+  const centerY = boundingRect.height / 2;
+
+  const rotateX = (offsetY - centerY) / sensitivity;
+  const rotateY = (offsetX - centerX) / sensitivity;
+
+  ghibliItems.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+});
+
+ghibliItems.addEventListener("mouseleave", () => {
+  ghibliItems.style.transform = "perspective(800px) rotateX(0) rotateY(0)";
+});
+
 
 
 

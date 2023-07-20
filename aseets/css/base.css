@@ -15,6 +15,8 @@ html {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     overflow: hidden;
+    /* background-color: rgba(59, 172, 125, 0.479); */
+    min-width: 1126px ;
 }
 
 header{
@@ -24,6 +26,7 @@ header{
 .grid {
     width: 1400px;
     max-width: 100%;
+    min-width: 1126px;
     margin: 0 auto;
 }
 
