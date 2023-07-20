@@ -11,6 +11,7 @@ const audioList = [
     'aseets/img/CityWithAnOceanViewKiki39sDeli_37vkb.mp3',
     'aseets/img/TonariNoTotoroMyNeighborTotoro-A_37bm3.mp3',
     'aseets/img/MerryGoRound-JoeHisaishi-2706190.mp3'
+    
   ];
 
 let audio = new Audio(audioList[currentTrack]);
