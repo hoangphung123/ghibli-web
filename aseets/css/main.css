@@ -37,6 +37,23 @@ main{
     border-radius: 5px;
 }
 
+.header__menu-list .header__menu-list-item-totoro:hover{
+    background-color: rgba(80, 127, 170, 0.822);
+}
+
+.header__menu-list .header__menu-list-item-laputa:hover{
+    background-color: rgba(134, 74, 59, 0.767);
+}
+
+.header__menu-list .header__menu-list-item-si:hover{
+    background-color: rgba(80, 170, 128, 0.685);
+}
+
+.header__menu-list-item a{
+    color: rgba(250, 247, 247, 0.795);
+    text-decoration: none; 
+}
+
 .header {
     position: fixed;
     z-index: 9999;
@@ -71,6 +88,8 @@ main{
     text-decoration: none;
     font-weight: 300;
 }
+
+
 
 .header__navbar-item:hover, 
 .header__navbar-item-link:hover {
@@ -112,8 +131,8 @@ main{
 
 .header__navbar-button{
     border: none;
-    height: 21px;
-    width: 81px;
+    height: 40px;
+    width: 120px;
     border-radius: 5%;
     display: flex;
     align-items: center;
@@ -130,12 +149,21 @@ main{
 
 
 .header__navbar-button a {
+    position: absolute;
+    display: flex;
     text-decoration: none;
     color: rgba(245, 238, 238, 0.849);
 }
 
 .header__navbar-button a:hover{
     color: rgb(255, 255, 255);
+}
+
+.header__navbar-button-img{
+    position: absolute;
+    width: 90px;
+    top: -20px;
+    left: -45px;
 }
 
 .ghibli__item{
