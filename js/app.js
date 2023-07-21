@@ -167,6 +167,10 @@ ghibliItems.addEventListener("mouseleave", () => {
   ghibliItems.style.transform = "perspective(800px) rotateX(0) rotateY(0)";
 });
 
+
+
+
+
 const buttonss = document.querySelector(".moveButtonss");
 const bgImgss = document.querySelector(".bg-img3");
 
@@ -204,6 +208,42 @@ ghibliItemss.addEventListener("mouseleave", () => {
 
 
 
+
+
+const buttonsss = document.querySelector(".moveButtonsss");
+const bgImgsss = document.querySelector(".bg-img4");
+
+
+buttonsss.addEventListener("mouseenter", () => {
+  // Thay đổi màu của button khi hover
+  bgImgsss.style.boxShadow = "0px 0px 100px 0.1px rgba(165, 101, 207, 0.788), 0 0 100px 0.1px rgba(165, 101, 207, 0.788)"; // Áp dụng hiệu ứng box-shadow cho bg-img1
+});
+
+buttonsss.addEventListener("mouseleave", () => {
+  buttonsss.style.backgroundColor = ""; // Đặt lại màu gốc của button khi không hover
+  bgImgsss.style.boxShadow = ""; // Loại bỏ hiệu ứng box-shadow của bg-img1
+});
+
+const ghibliItemsss = document.querySelector(".ghibli__itemsss");
+const sensitivitysss = 30; // Điều chỉnh độ nhạy của hiệu ứng, giá trị càng lớn thì hiệu ứng càng nhạy
+
+ghibliItemsss.addEventListener("mousemove", (event) => {
+  const boundingRect = ghibliItemsss.getBoundingClientRect();
+  const offsetX = event.clientX - boundingRect.left;
+  const offsetY = event.clientY - boundingRect.top;
+
+  const centerX = boundingRect.width / 2;
+  const centerY = boundingRect.height / 2;
+
+  const rotateX = (offsetY - centerY) / sensitivity;
+  const rotateY = (offsetX - centerX) / sensitivity;
+
+  ghibliItemsss.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+});
+
+ghibliItemsss.addEventListener("mouseleave", () => {
+  ghibliItemsss.style.transform = "perspective(800px) rotateX(0) rotateY(0)";
+});
 
 
 

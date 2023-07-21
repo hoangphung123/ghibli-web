@@ -5,11 +5,8 @@ main{
     overflow: hidden;
 }
 
-
-
 .header__menu{
     position: fixed;
-    
     width: 200px;
     height: 100vh;
     top: 20%;
@@ -47,6 +44,10 @@ main{
 
 .header__menu-list .header__menu-list-item-si:hover{
     background-color: rgba(80, 170, 128, 0.685);
+}
+
+.header__menu-list .header__menu-list-item-ponyo:hover{
+    background-color: rgba(142, 80, 170, 0.685) ;
 }
 
 .header__menu-list-item a{
@@ -190,6 +191,18 @@ main{
     
 }
 
+.ghibli__itemsss{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: calc(50% - 250px);
+    right: calc(50% - 550px);
+    
+}
+
 
 .image-container {
     position: absolute;
@@ -207,10 +220,10 @@ main{
     
   }
 
-  .image-containers {
+.image-containers {
     position: absolute;
     display: inline-block;
-  }
+}
   
 .image-containers::after {
     content: "";
@@ -251,6 +264,10 @@ main{
     display: block;
 }
 
+.ghibli__item .bg-img4{
+    display: block;
+}
+
 .bg-img1:hover{
     content: "";
     box-shadow: 0px 0px 100px 0.1px rgba(95, 215, 159, 0.788), 0 0 100px 0.1px rgba(95, 215, 159, 0.363);
@@ -268,6 +285,13 @@ main{
 .bg-img3:hover{
     content: "";
     box-shadow: 0px 0px 100px 0.1px rgba(85, 121, 177, 0.788), 0 0 100px 0.1px rgba(85, 121, 177, 0.788);
+    backdrop-filter: blur(10px);
+    
+}
+
+.bg-img4:hover{
+    content: "";
+    box-shadow: 0px 0px 100px 0.1px rgba(165, 101, 207, 0.788), 0 0 100px 0.1px rgba(165, 101, 207, 0.788);
     backdrop-filter: blur(10px);
     
 }
@@ -367,6 +391,8 @@ main{
 .bg-img3 {
     transition: box-shadow 0.3s ease; 
   }
+
+
   
 .ghibli__item .moveButton:hover {
     background-color: rgba(95, 215, 159); 
@@ -441,6 +467,18 @@ main{
 }
 
 
+.ghibli__itemsss{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    width: 900px;
+    height: 500px;
+    top: calc(50% - 250px);
+    right: calc(50% - 550px);
+    
+}
+
 
 .bg-img2{
     top: 0;
@@ -452,7 +490,26 @@ main{
     
 }
 
+.bg-img4{
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 500px;
+    border-radius: 10%;
+    cursor: pointer;
+    
+}
+
 .ghibli__items .titles{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 8%;
+    right: 0;
+    
+}
+
+.ghibli__itemsss .titlesss{
     list-style-type: none;
     padding: 0;
     position: absolute;
@@ -484,7 +541,34 @@ main{
     font-size: 20px;
 }
 
+.ghibli__itemsss .titlesss li span{
+    font-family: 'Lilita One', cursive;
+    font-size: 45px;
+    color: rgb(121, 59, 134);
+    letter-spacing: 5px;
+}
+
+.ghibli__itemsss .title1sss{
+    padding: 0;
+    position: absolute;
+    top: 82%;
+    right: 0;
+}
+
+.ghibli__itemsss .title1sss button{
+    background-color: rgba(121, 59, 134, 0.767);
+    box-shadow: 0px 0px 0px 1px rgb(212, 97, 216);
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+}
+
 .bg-img2 {
+    transition: box-shadow 0.3s ease; 
+  }
+
+.bg-img4 {
     transition: box-shadow 0.3s ease; 
   }
   
@@ -492,10 +576,20 @@ main{
     background-color: rgba(123, 74, 77); 
 }
 
+.ghibli__itemsss .moveButtonsss:hover {
+    background-color: rgb(214, 94, 250); 
+}
+
 .ghibli__items .title1s a{
     text-decoration: none;
     color: rgba(245, 238, 238, 0.849);
 }
+
+.ghibli__itemsss .title1sss a{
+    text-decoration: none;
+    color: rgba(245, 238, 238, 0.849);
+}
+
 
 
 .ghibli__items .texts{
@@ -511,7 +605,26 @@ main{
     border-radius: 10px;
 }
 
+.ghibli__itemsss .textsss{
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    top: 21%;
+    right: 0;
+    width: 400px;
+    background-color: rgba(121, 59, 134, 0.856);
+    padding: 10px;
+    border-radius: 10px;
+}
+
 .ghibli__items li{
+    color: rgba(245, 238, 238, 0.849);
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.ghibli__itemsss li{
     color: rgba(245, 238, 238, 0.849);
     font-size: 1.4rem;
     letter-spacing: 2px;
