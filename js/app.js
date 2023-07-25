@@ -255,3 +255,12 @@ ghibliItemsss.addEventListener("mouseleave", () => {
 
 
 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+section {
+  height: 100vh;
+  background-color: rgba(155, 153, 153, 0.521);
+  width: 100%;
+  padding: 70px 0;
+  display: flex;
+  overflow: scroll;
+}
+
+.shop__container-tittle {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  position: relative;
+  top: 80px;
+}
+
+.shop__container-content {
+  position: relative;
+  width: 90%;
+  top: 0px;
+  left: 205px;
+  
+}
+
+.shop__container-content-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.product-box {
+  padding: 20px;
+}
+
+.product-img {
+  width: 275px;
+}
+
