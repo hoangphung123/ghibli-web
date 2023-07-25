@@ -1,3 +1,4 @@
+
 section {
   height: 100vh;
   /* background-color: rgba(155, 153, 153, 0.521); */
@@ -74,5 +75,24 @@ section {
   background: black;
   color: white;
   padding: 10px;
+  cursor: pointer;
+}
+
+.shopcart{
+  position: absolute;
+  right: 30px;
+}
+
+.shopcart-li{
+  list-style: none;
+}
+
+.fa-basket-shopping{
+  color: rgba(250, 247, 247, 0.616);
+  font-size: 20px;
+}
+
+.fa-basket-shopping:hover{
+  color: rgba(250, 247, 247, 0.884) ;
   cursor: pointer;
 }
